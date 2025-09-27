@@ -34,6 +34,7 @@ namespace guestbook
 
                 switch (chosenOption)
                 {
+                    //Lägg till ett index
                     case '1':
                         Console.CursorVisible = true;
                         Console.Write("Ange ditt namn: ");
@@ -42,6 +43,7 @@ namespace guestbook
                         string? message = Console.ReadLine();
                         if (!String.IsNullOrEmpty(guestName) && !String.IsNullOrEmpty(message)) guestbook.addPost(guestName, message);
                         break;
+                    //Radera inlägg med index
                     case '2':
                         Console.CursorVisible = true;
                         Console.Write("Ange index du vill radera: ");
@@ -57,6 +59,7 @@ namespace guestbook
                                 Console.ReadKey();
                             }
                         break;
+                    //Avsluta programmet, 88 är X i ASCII-värde
                     case 88:
                         Environment.Exit(0);
                         break;
