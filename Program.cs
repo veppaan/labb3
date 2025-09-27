@@ -28,6 +28,40 @@ namespace guestbook
                 {
                     Console.WriteLine("[" + i++ + "]" + "Gäst: " + post.Guest + "Text: " + post.Message);
                 }
+
+                //Användarens val
+                int chosenOption = (int)Console.ReadKey(true).Key;
+
+                switch (chosenOption)
+                {
+                    case '1':
+                        Console.CursorVisible = true;
+                        Console.Write("Ange ditt namn: ");
+                        string? guestName = Console.ReadLine();
+                        Console.Write("Ange din text: ");
+                        string? message = Console.ReadLine();
+                        if (!String.IsNullOrEmpty(guestName) && !String.IsNullOrEmpty(message)) guestbook.addPost(guestName, message);
+                        break;
+                    case '2':
+                        Console.CursorVisible = true;
+                        Console.Write("Ange index du vill radera: ");
+                        string? index = Console.ReadLine();
+                        if (!String.IsNullOrEmpty(index))
+                            try
+                            {
+                                guestbook.deletePost(Convert.ToInt32(index));
+                            }
+                            catch (Exception)
+                            {
+                                Console.WriteLine("Index är ogiltig! \n Tryck på valfri knapp för att fortsätta");
+                                Console.ReadKey();
+                            }
+                        break;
+                    case 88:
+                        Environment.Exit(0);
+                        break;
+
+                }
             }
         }
     }
