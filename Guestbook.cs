@@ -19,6 +19,7 @@ namespace guestbook
                 posts = JsonSerializer.Deserialize<List<Post>>(jsonString)!;
             }
         }
+        //Lägger till ett inlägg
         public Post addPost(string g, string t)
         {
             Post obj = new Post();
@@ -27,12 +28,14 @@ namespace guestbook
             save();
             return obj;
         }
+        //Raderar ett inlägg med index
         public int deletePost(int index)
         {
             posts.RemoveAt(index);
             save();
             return index;
         }
+        //Hämtar inlägg
         public List<Post> getPosts()
         {
             return posts;

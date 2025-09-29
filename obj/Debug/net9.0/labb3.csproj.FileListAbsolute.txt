@@ -1,0 +1,15 @@
+/Users/verak/Desktop/labb3/bin/Debug/net9.0/labb3
+/Users/verak/Desktop/labb3/bin/Debug/net9.0/labb3.deps.json
+/Users/verak/Desktop/labb3/bin/Debug/net9.0/labb3.runtimeconfig.json
+/Users/verak/Desktop/labb3/bin/Debug/net9.0/labb3.dll
+/Users/verak/Desktop/labb3/bin/Debug/net9.0/labb3.pdb
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.AssemblyInfoInputs.cache
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.AssemblyInfo.cs
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.csproj.CoreCompileInputs.cache
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.sourcelink.json
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.dll
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/refint/labb3.dll
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.pdb
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/labb3.genruntimeconfig.cache
+/Users/verak/Desktop/labb3/obj/Debug/net9.0/ref/labb3.dll

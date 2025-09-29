@@ -11,8 +11,9 @@ namespace guestbook
         static void Main(string[] args)
         {
             Guestbook guestbook = new Guestbook();
-            int i = 0;
+            int i;
 
+            //Utskrift till användaren
             while (true)
             {
                 Console.Clear();
