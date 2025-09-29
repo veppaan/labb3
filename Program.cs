@@ -17,16 +17,16 @@ namespace guestbook
             while (true)
             {
                 Console.Clear();
-                Console.CursorVisible = false;
+                Console.CursorVisible = true;
                 Console.WriteLine("G Ä S T B O K\n");
 
                 i = 0;
                 foreach (Post post in guestbook.getPosts())
                 {
-                    Console.WriteLine("[" + i++ + "]" + "Gäst: " + post.Guest + " Meddelande: " + post.Message);
+                    Console.WriteLine("[" + i++ + "] " + "Gäst: " + post.Guest + " Meddelande: " + post.Message);
                 }
 
-                Console.WriteLine("1. Lägg till ett inlägg");
+                Console.WriteLine("\n1. Lägg till ett inlägg");
                 Console.WriteLine("2. Ta bort ett inlägg\n");
                 Console.WriteLine("X. Avsluta\n");
 
@@ -44,7 +44,15 @@ namespace guestbook
                         string? guestName = Console.ReadLine();
                         Console.Write("Ange din text: ");
                         string? message = Console.ReadLine();
-                        if (!String.IsNullOrEmpty(guestName) && !String.IsNullOrEmpty(message)) guestbook.addPost(guestName, message);
+                        if (!String.IsNullOrWhiteSpace(guestName) && !String.IsNullOrWhiteSpace(message))
+                        {
+                            guestbook.addPost(guestName, message);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Fälten får inte vara tomma! Tryck på valfri tangent för att fortsätta.");
+                            Console.ReadKey();
+                        }
                         break;
                     //Radera inlägg med index
                     case '2':
