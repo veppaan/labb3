@@ -20,15 +20,17 @@ namespace guestbook
                 Console.CursorVisible = false;
                 Console.WriteLine("G Ä S T B O K\n");
 
-                Console.WriteLine("1. Lägg till ett inlägg");
-                Console.WriteLine("2. Ta bort ett inlägg\n");
-                Console.WriteLine("X. Avsluta\n");
-
                 i = 0;
                 foreach (Post post in guestbook.getPosts())
                 {
                     Console.WriteLine("[" + i++ + "]" + "Gäst: " + post.Guest + " Meddelande: " + post.Message);
                 }
+
+                Console.WriteLine("1. Lägg till ett inlägg");
+                Console.WriteLine("2. Ta bort ett inlägg\n");
+                Console.WriteLine("X. Avsluta\n");
+
+                
 
                 //Användarens val
                 int chosenOption = (int)Console.ReadKey(true).Key;
