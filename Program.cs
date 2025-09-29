@@ -27,7 +27,7 @@ namespace guestbook
                 i = 0;
                 foreach (Post post in guestbook.getPosts())
                 {
-                    Console.WriteLine("[" + i++ + "]" + "Gäst: " + post.Guest + "Text: " + post.Message);
+                    Console.WriteLine("[" + i++ + "]" + "Gäst: " + post.Guest + " Meddelande: " + post.Message);
                 }
 
                 //Användarens val

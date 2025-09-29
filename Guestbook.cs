@@ -25,6 +25,7 @@ namespace guestbook
             Post obj = new Post();
             obj.Guest = g;
             obj.Message = t;
+            posts.Add(obj);
             save();
             return obj;
         }
